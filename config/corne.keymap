@@ -9,10 +9,24 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <280>;
+            bindings = <&kp SPACE>, <&kp ENTER>;
+        };
+    };
+
+
+
+
+{
         keymap {
                 compatible = "zmk,keymap";
 
-                default_layer {
+                base {
 
                         bindings = <
 //        1     2     3     4     5       6     7      8      9      10            
@@ -21,25 +35,24 @@
         &kp Z &kp S &kp E &kp A &kp F   &kp B &kp T  &kp N  &kp H   &kp Q
 //       21    22    23    24    25      26    27     28     29      30
         &kp Z &kp X &kp C &kp V &kp J   &kp K &kp L  &kp W  &kp U   &kp FSLH 
-                  
-              &kp LGUI &td0 &kp COMMA   &kp DOT &kp BSPC &kp RALT
+//               31     32      33         34       35      36                 
+              &trans  &td0 &kp COMMA     &kp DOT &kp BSPC &trans
                         >;
-                };
-                lower_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+            };
+                num {
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                          	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
-                        >;
-                };
+   /*        *          1           2           3        -                 F1       F2         F3          F4        F5 */
+           &kp *      &kp N1     &kp N2     &kp N3    &kp KP_MINUS     &kp F1     &kp F2     &kp F3     &kp F4    &kp F5
+         /*    .        4           5           6        +                 F6       F7         F8         F9       F10  */
+          &kp DOT     &kp N4     &kp N5     &kp N6    &kp KP_PLUS     &kp F6     &kp F7     &kp F8     &kp F9    &kp F10
+         /*    /        7           8           9        =               F11      F12                                 */
+            &kp FSLH  &kp N7    &kp N8     &kp N9     &kp EQUAL      &kp F11    &kp 12    &trans     &trans     &trans
+                                                    /*   0                      */
+                                                       &kp N0           &trans  
+                           >;
+             };
 
-                raise_layer {
+                sym {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
