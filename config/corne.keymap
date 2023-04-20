@@ -35,11 +35,11 @@
                 BASE {
 
                         bindings = <
-//        1        2     3     4     5       6     7      8      9      10            
+//        1 ' "    2     3     4     5       6     7      8      9      10  ; :           
         &kp SQT  &kp I &kp G &kp R &kp P   &kp Y &kp D  &kp O  &kp M   &kp SEMI    
 //       11       12    13    14    15      16    17     18     19      20            
         &kp Z    &kp S &kp E &kp A &kp F   &kp B &kp T  &kp N  &kp H   &kp Q
-//       21       22    23    24    25      26    27     28     29      30
+//       21 !     22    23    24    25      26    27     28     29      30  / ?
         &kp EXCL &kp X &kp C &kp V &kp J   &kp K &kp L  &kp W  &kp U   &kp FSLH 
 //               31     32      33         34       35      36                 
               &trans  &td0 &kp COMMA     &kp DOT &kp BSPC &trans
@@ -48,7 +48,7 @@
                 NUM {
                         bindings = <
    /*        *          1           2           3        -                 F1        F2         F3         F4        F5 */
-           &kp *      &kp N1     &kp N2     &kp N3    &kp KP_MINUS     &kp F1    &kp F2     &kp F3     &kp F4    &kp F5
+           &kp STAR   &kp N1     &kp N2     &kp N3    &kp KP_MINUS     &kp F1    &kp F2     &kp F3     &kp F4    &kp F5
          /*    .        4           5           6        +                 F6        F7         F8         F9        F10  */
           &kp DOT     &kp N4     &kp N5     &kp N6    &kp KP_PLUS      &kp F6    &kp F7     &kp F8     &kp F9    &kp F10
          /*    /        7           8           9        =                F11        F12                                 */
