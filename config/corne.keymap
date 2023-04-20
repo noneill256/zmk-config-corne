@@ -28,7 +28,7 @@
 
 
 
-{
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -72,4 +72,4 @@
                 };
         };
 };
-};
+
