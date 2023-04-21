@@ -26,6 +26,7 @@
         };
     };
 
+// make a macro for every mod combination -_-
 
     combos {
         compatible = "zmk,combos";
@@ -130,7 +131,7 @@
             timeout-ms = <80>;
             key-positions = <20 21>;
             bindings = <&kp LCMD, &kp LSHFT>;
-        }
+        };
         
         right_mod_shift {
             timeout-ms = <80>;
@@ -230,11 +231,11 @@
                WM {
                         bindings = <
 
-          &trans  &trans  &trans  &trans   &trans       &trans   &trans     &kp UP     &trans    &trans
+          &trans  &trans  &trans  &trans   &trans       &trans  &trans     &kp UP     &trans    &trans
 
-          &trans  &trans  &trans   &trans  &trans       &trans   &kp LEFT   &kp DOWN   &kp RIGHT &trans
+          &trans  &trans  &trans   &trans  &trans       &trans  &kp LEFT   &kp DOWN   &kp RIGHT &trans
 
-          &trans  &trans  &trans  &trans   &trans       &trans  &trans      &trans     &trans    &trans
+          &trans  &trans  &trans  &trans   &trans       &trans  &trans     &trans     &trans    &trans
 
                              &trans &trans &trans       &trans &trans &trans
                         
