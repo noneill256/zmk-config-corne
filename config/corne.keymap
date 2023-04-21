@@ -33,7 +33,7 @@
             timeout-ms = <80>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
-        }
+        };
         
         combo_ltab {
             timeout-ms = <80>;
@@ -137,6 +137,8 @@
             key-positions = <16 17 18>;
             bindings = <&tog BASE>;
         };
+        
+        
         
     };
 
