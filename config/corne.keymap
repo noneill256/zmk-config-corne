@@ -27,6 +27,14 @@
     };
 
 // make a macro for every mod combination -_-
+    macros {
+        
+        ZMK_MACRO(mod_one,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp LCMD &kp N1>;
+        )
+    };
 
     combos {
         compatible = "zmk,combos";
@@ -130,13 +138,13 @@
         left_mod_shift {
             timeout-ms = <80>;
             key-positions = <20 21>;
-            bindings = <&kp LCMD, &kp LSHFT>;
+            bindings = <&kp LCMD &kp LSHFT>;
         };
         
         right_mod_shift {
             timeout-ms = <80>;
             key-positions = <28 29>;
-            bindings = <&kp RCMD, &kp RSHFT>;
+            bindings = <&kp RCMD &kp RSHFT>;
         };
         
         left_wm {
