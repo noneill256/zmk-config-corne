@@ -64,7 +64,7 @@
         bindings = <&kp LCMD &kp LSHFT &kp N1>;
         )
         
-        ZMK_MACRO(mod_shift_twp,
+        ZMK_MACRO(mod_shift_two,
         wait-ms = <0>;
         tap-ms = <40>;
         bindings = <&kp LCMD &kp LSHFT &kp N2>;
