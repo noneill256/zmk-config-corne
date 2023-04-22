@@ -294,7 +294,7 @@
 
           &none  &trans  &mod_one    &mod_two   &mod_three   &trans           &trans  &mod_shift_one    &mod_shift_two    &mod_shift_three    &trans  &none  
 
-          &none  &trans  &&mod_four  &mod_five  &trans       &trans           &trans  &mod_shift_four   &mod_shift_five   trans              &trans  &none  
+          &none  &trans  &mod_four   &mod_five  &trans       &trans           &trans  &mod_shift_four   &mod_shift_five   &trans              &trans  &none  
 
           &none  &trans  &trans  &trans  &trans   &trans                      &trans  &trans             &trans     &trans                  &trans  &none  
 
