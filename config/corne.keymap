@@ -89,39 +89,8 @@
         )
     };
 
-// then make a combo for every macro -_-
     combos {
         compatible = "zmk,combos";
-        
-        combo_mod_one {
-            timeout-ms = <80>;
-            key-positions = <0 1>;
-            bindings = <&mod_one>;
-        };
-        
-        combo_mod_two { 
-            timeout-ms = <80>;
-            key-positions = <0 1>;
-            bindings = <&mod_two>;
-        };
-        
-        combo_mod_three { 
-            timeout-ms = <80>;
-            key-positions = <0 1>;
-            bindings = <&mod_three>;
-        };
-        
-        combo_mod_four { 
-            timeout-ms = <80>;
-            key-positions = <0 1>;
-            bindings = <&mod_four>;
-        };
-        
-        combo_mod_five { 
-            timeout-ms = <80>;
-            key-positions = <0 1>;
-            bindings = <&mod_five>;
-        };
         
         combo_esc {
             timeout-ms = <80>;
@@ -233,13 +202,13 @@
         
         left_wm { // layer
             timeout-ms = <80>;
-            key-positions = <10 11>;
+            key-positions = <13 14>;
             bindings = <&mo 5>;
         };
         
         right_wm { // layer
             timeout-ms = <80>;
-            key-positions = <18 19>;
+            key-positions = <21 22>;
             bindings = <&mo 5>;
         };
         
@@ -323,11 +292,11 @@
                WM {
                         bindings = <
 
-          &none  &trans  &trans  &trans  &trans   &trans       &trans  &trans     &kp UP     &trans    &trans  &none  
+          &none  &trans  &mod_one    &mod_two   &mod_three   &trans           &trans  &mod_shift_one    &mod_shift_two    &mod_shift_three    &trans  &none  
 
-          &none  &trans  &trans  &trans  &trans   &trans       &trans  &kp LEFT   &kp DOWN   &kp RIGHT &trans  &none  
+          &none  &trans  &&mod_four  &mod_five  &trans       &trans           &trans  &mod_shift_four   &mod_shift_five   trans              &trans  &none  
 
-          &none  &trans  &trans  &trans  &trans   &trans       &trans  &trans     &trans     &trans    &trans  &none  
+          &none  &trans  &trans  &trans  &trans   &trans                      &trans  &trans             &trans     &trans                  &trans  &none  
 
                              &trans &trans &trans       &trans &trans &trans
                         
