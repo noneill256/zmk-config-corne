@@ -31,97 +31,97 @@
         
         combo_esc {
             timeout-ms = <74>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
             bindings = <&kp ESC>;
         };
         
         combo_ltab {
             timeout-ms = <74>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
             bindings = <&kp TAB>;
         };
 
         combo_lshift {
             timeout-ms = <74>;
-            key-positions = <11 12>;
+            key-positions = <14 15>;
             bindings = <&kp RSHFT>;
         };
 
         combo_lcmd {
             timeout-ms = <74>;
-            key-positions = <21 22>;
+            key-positions = <26 27>;
             bindings = <&kp RCMD>;
         };
         
         combo_lnum {
-            timeout-ms = <74>;
-            key-positions = <2 3>;
+            timeout-ms = <84>;
+            key-positions = <3 4>;
             bindings = <&mo 1>;
         };
         
         combo_lsym {
             timeout-ms = <74>;
-            key-positions = <12 13>;
+            key-positions = <15 16>;
             bindings = <&mo 2>;
         };
         
         combo_lsys {
             timeout-ms = <74>;
-            key-positions = <22 23>;
+            key-positions = <27 28>;
             bindings = <&mo 3>;
         };
 
         combo_ralt {
             timeout-ms = <74>;
-            key-positions = <7 8>;
+            key-positions = <8 9>;
             bindings = <&kp RALT>;
         };
 
         combo_rshift {
             timeout-ms = <74>;
-            key-positions = <17 18>;
+            key-positions = <20 21>;
             bindings = <&kp RSHFT>;
         };
 
         combo_rcmd {
             timeout-ms = <74>;
-            key-positions = <27 28>;
+            key-positions = <32 33>;
             bindings = <&kp RCMD>;
         };
 
         combo_rnum {
             timeout-ms = <74>;
-            key-positions = <6 7>;
+            key-positions = <7 8>;
             bindings = <&mo 1>;
         };
         
         combo_rsym {
             timeout-ms = <74>;
-            key-positions = <16 17>;
+            key-positions = <19 20>;
             bindings = <&mo 2>;
         };
 
         combo_rsys {
             timeout-ms = <74>;
-            key-positions = <26 27>;
+            key-positions = <31 32>;
             bindings = <&mo 3>;
         };
 
         combo_capslock {
             timeout-ms = <74>;
-            key-positions = <18 19 20>;
+            key-positions = <19 20 21>;
             bindings = <&kp CAPS>;
         };
         
         combo_nav {
-            timeout-ms = <74>;
-            key-positions = <10 11 12>;
+            timeout-ms = <75>;
+            key-positions = <14 15 16>;
             bindings = <&tog NAV>;
         };
         
         panic_button {
             timeout-ms = <80>;
-            key-positions = <16 17 18>;
+            key-positions = <20 21 22>;
             bindings = <&tog BASE>;
         };
         
