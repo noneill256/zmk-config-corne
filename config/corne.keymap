@@ -157,7 +157,7 @@
          /*          *        7           8           9        =                F11        F12                                 */
           &none  &kp STAR  &kp N7    &kp N8     &kp N9     &kp EQUAL        &kp F11   &kp F12    &trans     &trans     &trans    &none  
                                                     /*   0                      */
-                                           &trans &trans &kp N0           &trans &trans &trans
+                                           &trans &kp N0 &trans           &trans &trans &trans
                            >;
              };
 
