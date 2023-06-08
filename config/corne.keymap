@@ -177,7 +177,7 @@
                
                SYS {
                         bindings = <
-            &none  &trans      &kp C_VOL_DNN &kp C_MUTE         &kp C_VOL_UP     &trans             &kp DEL       &kp HOME   &kp UP    &kp PG_UP   &trans     &none  
+            &none  &trans      &kp C_VOL_DN    &kp C_MUTE         &kp C_VOL_UP     &trans             &kp DEL       &kp HOME   &kp UP    &kp PG_UP   &trans     &none  
             
             &none  &bt BT_NXT  &kp C_PREV      &kp C_PLAY_PAUSE   &kp C_NEXT       &trans             &kp C_AL_CALC &kp LEFT   &kp DOWN  &kp RIGHT   &bt BT_NXT &none  
                      
