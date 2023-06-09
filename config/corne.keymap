@@ -20,7 +20,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
-            tapping-term-ms = <160>;
+            tapping-term-ms = <190>;
             bindings = <&kp ENTER>, <&kp Q>;
         };
     };
@@ -30,67 +30,67 @@
         compatible = "zmk,combos";
         
         combo_esc {
-            timeout-ms = <65>;
+            timeout-ms = <60>;
             key-positions = <1 2>;
             bindings = <&kp ESC>;
         };
         
         combo_ltab {
-            timeout-ms = <65>;
+            timeout-ms = <60>;
             key-positions = <2 3>;
             bindings = <&kp TAB>;
         };
 
         combo_lshift {
-            timeout-ms = <65>;
+            timeout-ms = <60>;
             key-positions = <14 15>;
             bindings = <&kp RSHFT>;
         };
 
         combo_lcmd {
-            timeout-ms = <65>;
+            timeout-ms = <60>;
             key-positions = <26 27>;
             bindings = <&kp RCMD>;
         };
         
         combo_lnum {
-            timeout-ms = <65>;
+            timeout-ms = <60>;
             key-positions = <3 4>;
             bindings = <&mo 1>;
         };
         
         combo_lsym {
-            timeout-ms = <65>;
+            timeout-ms = <60>;
             key-positions = <15 16>;
             bindings = <&mo 2>;
         };
         
         combo_lsys {
-            timeout-ms = <65>;
+            timeout-ms = <60>;
             key-positions = <27 28>;
             bindings = <&mo 3>;
         };
 
         combo_ralt {
-            timeout-ms = <65>;
+            timeout-ms = <60>;
             key-positions = <8 9>;
             bindings = <&kp RALT>;
         };
 
         combo_rshift {
-            timeout-ms = <65>;
+            timeout-ms = <60>;
             key-positions = <20 21>;
             bindings = <&kp RSHFT>;
         };
 
         combo_rcmd {
-            timeout-ms = <65>;
+            timeout-ms = <60>;
             key-positions = <32 33>;
             bindings = <&kp RCMD>;
         };
 
         combo_rnum {
-            timeout-ms = <65>;
+            timeout-ms = <60>;
             key-positions = <7 8>;
             bindings = <&mo 1>;
         };
@@ -102,7 +102,7 @@
         };
 
         combo_rsys {
-            timeout-ms = <65>;
+            timeout-ms = <60>;
             key-positions = <31 32>;
             bindings = <&mo 3>;
         };
@@ -114,7 +114,7 @@
         };
         
         combo_nav {
-            timeout-ms = <70>;
+            timeout-ms = <65>;
             key-positions = <14 15 16>;
             bindings = <&tog NAV>;
         };
